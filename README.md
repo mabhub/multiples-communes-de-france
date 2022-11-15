@@ -6,12 +6,19 @@ noms de communes.
 ## Utilisation
 
 ```shell
+npm install
 node index.mjs > communes.csv
 ```
 
 ## Données
 
-Les données proviennent du site [data.gouv.fr](https://www.data.gouv.fr/fr/), et
-plus particulièrement du jeu de données [Communes de France - Base des codes
-postaux](https://www.data.gouv.fr/fr/datasets/communes-de-france-base-des-codes-postaux/).
-Elles datent de début 2020.
+Les données proviennent du site de l'[INSEE](https://www.insee.fr/), et plus
+particulièrement du jeu de données [Découpage
+communal](https://www.insee.fr/fr/information/2028028).
+
+## Dépendances
+
+Pour traiter le fichier `zip`, on utilise le paquet
+[JSZip](https://github.com/Stuk/jszip). Pour interpreter ensuite le fichier
+`xlsx` qu'il contient, on utilise le paquet
+[xlsx](https://github.com/SheetJS/sheetjs).
